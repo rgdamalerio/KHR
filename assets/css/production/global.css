@@ -113,3 +113,136 @@
   background-color: #994789;
   color: #fff;
 }
+
+
+/* contact */
+
+.contact {
+  padding: 6rem;
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "left right right right";
+  grid-gap: 10px;
+  justify-items: center;
+  background: #6ba539;
+  color: #fff;
+}
+
+.contact h1,
+.contact h2 {
+  color: #fff;
+}
+
+.contact .contact-left {
+  grid-area: left;
+  width: 100%;
+}
+
+.contact .contact-right {
+  grid-area: right;
+  justify-self: center;
+  width: 70%;
+}
+
+.contact .contact-form {
+  width: 100%;
+}
+
+.contact .contact-form div {
+  text-align: center;
+}
+
+.contact .contact-form input,
+.contact .contact-form select,
+.contact .contact-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 14px;
+  padding: 0.8em 1.2em;
+  margin: 0.6rem 0;
+}
+
+.contact .contact-form input[type=submit],
+.contact .contact-form button[type=submit],
+.contact .contact-form button {
+  width: 250px;
+  padding: 0.8em 1.2em;
+  margin: 0.6rem 0;
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  background-color: #1e1e1e;
+  color: #fff;
+  cursor: pointer;
+}
+
+.contact .contact-form .contact-select-area {
+  display: flex;
+}
+
+.contact .contact-form .contact-select-area button[type=button],
+.contact .contact-form .contact-select-area button {
+  border-right: 3px solid #bcbec0;
+  background: #fff;
+  color: #000;
+}
+
+
+/* footer new */
+
+.footer {
+  min-height: 320px;
+  padding: 3rem 1rem 1.5rem;
+  background: #1e1e1e;
+}
+
+.footer-content {
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  grid-template-rows: 300px 20px;
+  grid-template-areas: 
+      "left middle right"
+      "bottom bottom auto";
+  grid-gap: 20px;
+}
+
+.footer .footer-link {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #f0f0f0;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer .footer-link:hover {
+  color: #fff;
+}
+
+.footer .footer-disclaimer {
+  display: block;
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .footer-content .footer-left {
+  grid-area: left;
+}
+
+.footer .footer-content .footer-middle {
+  grid-area: middle;
+}
+
+.footer .footer-content .footer-right {
+  grid-area: right;
+  justify-self: right;
+}
+
+.footer .footer-content .footer-bottom {
+  grid-area: bottom;
+  justify-self: left;
+}
